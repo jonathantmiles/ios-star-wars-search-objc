@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface LSCPerson : NSObject
 
 - (instancetype)initWithName:(NSString *)name birthYear:(NSString *)birthYear height:(NSString *)height eyeColor:(NSString *)eyeColor;
+- (instancetype)initWithDictionary:(NSDictionary *) dictionary;
 
 @property (nonatomic, copy, readonly) NSString *name;
 @property (nonatomic, copy, readonly) NSString *birthYear;

@@ -22,4 +22,15 @@
     return self;
 }
 
+// creates an init from dictionary that decodes our JSON into this type from a dictionary with the keys for the objects. Note that the keys here are the names from the JSON. 
+- (instancetype)initWithDictionary:(NSDictionary *) dictionary
+{
+    NSString *name = dictionary[@"name"];
+    NSString *birthYear = dictionary[@"birth_year"];
+    NSString *height = dictionary[@"height"];
+    NSString *eyeColor = dictionary[@"eye_color"];
+    
+    return [self initWithName:name birthYear:birthYear height:height eyeColor:eyeColor];
+}
+
 @end
